@@ -1,0 +1,46 @@
+<html>
+    <style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: url("https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F642026%2Fmongodb-stock-mdb.jpg&w=700");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+</style>
+    <body>
+        <h3>
+            Predict tomorrows stock price
+        </h3>
+        <div class="hero-image">
+            <form action="/predict", method="POST">
+                <center>
+                <br>
+                <label for="add_values">Enter stock prices</label><br>  
+                <input type="number" step="0.0001" id="value_1" name="value_1" placeholder="Yesterday"/><br>
+                <input type="number" step="0.0001" id="value_2" name="value_2" placeholder="1 day before yestarday"/><br>
+                <input type="number" step="0.0001" id="value_3" name="value_3" placeholder="2 days before yestarday"><br>
+                <input type="number" step="0.0001" id="value_4" name="value_4" placeholder="3 days before yestarday"><br>
+                <input type="number" step="0.0001" id="value_5" name="value_5" placeholder="4 days before yestarday"><br>
+                <input type="number" step="0.0001" id="value_6" name="value_6" placeholder="5 days before yestarday"><br>
+                <input type="number" step="0.0001" id="value_7" name="value_7" placeholder="6 days before yestarday"><br>
+                <input type="number" step="0.0001" id="value_8" name="value_8" placeholder="7 days before yestarday"><br>
+                <input type="number" step="0.0001" id="value_9" name="value_9" placeholder="8 days before yestarday"><br>
+                <input type="number" step="0.0001" id="value_10" name="value_10" placeholder="9 days before yestarday"><br>
+                <br>
+                <label for="add_values">Enter stock volumes</label><br>  
+                <input type="number" step="0.0001" id="value_11" name="value_11" placeholder="Yesterday"><br>
+                <input type="number" step="0.0001" id="value_12" name="value_12" placeholder="1 day before yestarday"><br>
+                <button type="submit">Submit</button>
+                </center>
+            </form>
+        </div>
+    </body>

@@ -1,0 +1,7 @@
+unicodedata==13.0.0.
+Flask==2.1.2
+numpy==1.23.0
+scikit-learn==1.1.1
+joblib==1.1.0
+pandas==1.4.3
+bs4==4.9.0
